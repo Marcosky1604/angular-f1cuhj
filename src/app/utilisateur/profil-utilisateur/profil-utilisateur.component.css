@@ -1,0 +1,12 @@
+div {
+  border: 1px solid;
+  margin-bottom: 80px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img {
+  height: 150px;
+  width: auto;
+}

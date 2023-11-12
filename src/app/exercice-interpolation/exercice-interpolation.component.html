@@ -1,0 +1,40 @@
+<h1>Templates</h1>
+
+<h2>Template Syntax</h2>
+<p>Hello {{ prenom }} !</p>
+
+<a [href]="lien" target="_blank"><img [src]="imgGoogle" /></a>
+
+<br />
+<h2>Event Binding</h2>
+<button (click)="showAlert()">Ca marche ?</button>
+
+<br />
+<br />
+<h2>Two-Way Data Binding</h2>
+
+<input [(ngModel)]="monChamp" />
+<br />
+<button (click)="effacerChamp()">Effacer input</button>
+{{ monChamp }}
+<br />
+
+<h2>Template Directives *ngIf</h2>
+
+<p *ngIf="isConnected; else offlineBlock">L'utilisateur est en ligne.</p>
+<ng-template #offlineBlock><p>L'utilisateur est hors ligne.</p></ng-template>
+<button (click)="passerHorsLigne()">Passer l'utilisateur hors ligne</button>
+<button (click)="passerEnLigne()">Passer l'utilisateur en ligne</button>
+<br />
+<br />
+<h2>Template Directives *ngFor</h2>
+<ul>
+  <li *ngFor="let fruit of fruits; trackBy: trackByFn">
+    {{ fruit.name }}
+  </li>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<br />

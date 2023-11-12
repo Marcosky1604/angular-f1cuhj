@@ -1,0 +1,21 @@
+div {
+  border: 2px solid;
+  border-radius: 10px;
+  width: 300px;
+  display: grid;
+  background-color: aliceblue;
+}
+img,
+p {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  font-style: italic;
+}
+img {
+  width: 280px;
+}

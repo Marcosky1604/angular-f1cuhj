@@ -1,0 +1,11 @@
+<p>
+cart works!
+</p>
+
+<ul>
+  <li *ngFor="let item of products">
+    <app-item [item]="item" (delete)="onDelete($event)"/>
+  </li>
+</ul>
+
+<br/>

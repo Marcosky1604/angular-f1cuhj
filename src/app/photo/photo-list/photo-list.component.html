@@ -1,0 +1,7 @@
+<p>photo-list works!</p>
+<ul>
+  <li *ngFor="let photo of photo$ | async; trackBy: trackByFn">
+    <p>{{ photo.title }}</p>
+    <img src="{{ photo.thumbnailUrl }}" alt="{{ photo.title }}" />
+  </li>
+</ul>
